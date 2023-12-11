@@ -20,19 +20,19 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
+For create module/service/controller(in this example for users)
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ nest generate module users
+$ nest generate service users
+$ nest generate controller users
 ```
 
+Use swager
+```bash
+# install
+$ npm i @nestjs/swagger swagger-ui-express
+```
+on main.ts initialize DocumentBuilder
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
